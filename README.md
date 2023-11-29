@@ -1,8 +1,8 @@
 # TallyCount
 
-TallyCount is a free and mobile-friendly digital tally counter tool designed to make counting tasks easy. Whether you're tallying people, items, or conducting surveys, this easy-to-use tool has you covered. It's written in HTML, CSS, and JavaScript.
+TallyCount is a mobile-friendly digital tally counter tool written in HTML, CSS, and JavaScript. Whether you're tallying people, items, or conducting surveys, this easy-to-use tool has you covered. 
 
-### Try @ <a href="https://tallycount.me">tallycount.me</a>
+### Try it out at <a href="https://tallycount.me">tallycount.me</a>
 
 ## Features
 
