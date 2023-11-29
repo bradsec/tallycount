@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Mobile friendly easy to use digital tally counters, suitable for tallying people, items, or conducting surveys and data collection." />
+        <meta name="author" content="Mark Bradley" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta name="theme-color" content="#222222" />
+        <link rel="icon" href="favicon.ico">
+      <title>Tally Count</title>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div id="flash-banner" class="flash-banner-container">
+    </div>        
+    <header>
+        <div class="branding">Tally<span>Count</span></div>
+        <div id="theme-switcher">
+          <svg id="sun-icon" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <circle class="sun" cx="12" cy="12" r="6" fill="currentColor" />
+            <g class="sun-beams" stroke="currentColor">
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </g>
+          </svg>
+          
+          <svg id="moon-icon" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <mask id="moon-mask" class="moon">
+              <rect x="0" y="0" width="100%" height="100%" fill="currentColor" />
+              <circle cx="12" cy="10" r="6" fill="white" />
+            </mask>
+            <circle class="moon" cx="12" cy="12" r="6" fill="currentColor" />
+          </svg>  
+        </div>
+      </header>
+        <main>    
+<div id="counter-creation-form">
+    <div class="hero">
+        <p>A FREE mobile-friendly easy to use digital tally counter tool. Whether you're tallying people, tracking vehicle traffic, or conducting surveys, these easy-to-use counters have you covered. Simply name and add the required counters and click the <span class="bold">Done</span> button to get started.</p>
+    </div>
+    <input type="text" id="counter-name" class="counter-input" placeholder="Enter counter name" />
+
+    <div class="initial-buttons">
+    <div class="control-button button" onclick="addCounter()">
+        <div>Add Counter</div>
+        </div>
+    <div class="control-button button" onclick="saveAndContinue()">
+        <div>Done</div>
+        </div>
+    </div>
+  </div>
+  <div id="digital-clock" class="digital-clock">00:00:00</div>
+  <div id="counters"></div>
+  <div class="button-group counter-extras">
+    <div class="control-button button" onclick="saveCurrentCount()">
+        <div>Save Count</div>
+    </div>
+  </div>
+  <p class="bold counter-extras">Saved Counts</p>
+  <textarea id="saved-counts" class="counter-extras" rows="5 " readonly></textarea>
+<div class="button-group counter-extras">
+    <div class="control-button button" onclick="resetCurrentCount()">
+        <div>Zero Counters</div>
+    </div>
+    <div class="control-button button" onclick="copySavedCounts()">
+        <div>Copy Saved</div>
+    </div>
+    <div class="control-button button" onclick="confirmClearAllCounts()">
+        <div>Clear Saved</div>
+    </div>
+    <div class="control-button button" onclick="resetApplication()">
+        <div>Reset Application</div>
+    </div>
+</div>
+<div class="toggle-group counter-extras">
+    <div class="toggle-item">
+        <label for="show-time">Show Time
+            <div class="switch">
+                <input type="checkbox" id="show-time" name="show-time" onclick="toggleDigitalClock()">
+                <span class="slider round"></span>
+            </div>
+        </label>
+    </div>
+    <div class="toggle-item">
+        <label for="sound-enabled">Sound Enabled
+            <div class="switch">
+                <input type="checkbox" id="sound-enabled" name="sound-enabled" onclick="toggleSound()">
+                <span class="slider round"></span>
+            </div>
+        </label>
+    </div>
+</div>
+</main>
+</div>
+  <script src="js/tallycount.js"></script>
+  <script src="js/theme.js"></script>
+</body>
+</html>
