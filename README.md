@@ -2,8 +2,6 @@
 
 TallyCount is a mobile-friendly digital tally counter tool written in HTML, CSS, and JavaScript. Whether you're tallying people, items, or conducting surveys, this easy-to-use tool has you covered. 
 
-### Try it out at <a href="https://tallycount.me">tallycount.me</a>
-
 ## Features
 
 - **Named Counters:** Easily assign custom names to your counters for better organization.
